@@ -7,10 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class LaunchBrowser_TestNG {
-
-	WebDriver driver;
-
- 
 	@Test
 	  public void LaunchBrowser() throws InterruptedException{
 		  
@@ -29,7 +25,7 @@ public class LaunchBrowser_TestNG {
 					
 					
 			//Click "Fresco Apps" link from search list
-			
+		  
 			driver.findElement(By.xpath("//*[@id='rso']/div/div/div[2]/div/div/h3/a")).click();
 			Thread.sleep(5000);
 			System.out.println("Page Title : " + driver.getTitle());
