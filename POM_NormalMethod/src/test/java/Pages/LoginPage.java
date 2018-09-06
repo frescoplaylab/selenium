@@ -10,6 +10,7 @@ public class LoginPage {
 	WebDriver driver;
 	
 	// In this class we will store all the locator and methods for LogIn page.
+	// Write your script here along with the element locators
 	
 	By LoginTab=By.xpath("//*[@id='pt-login']/a");
 	By username=By.xpath("//*[@id='wpName1']");
