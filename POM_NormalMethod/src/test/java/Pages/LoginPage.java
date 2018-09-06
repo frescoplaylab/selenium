@@ -16,7 +16,7 @@ public class LoginPage {
 	By password=By.xpath("//*[@id='wpPassword1']");
 	By logIn=By.xpath("//*[@id='wpLoginAttempt']");
 	
-	// By.id("wpPassword1");
+	
 	
 	
 	public LoginPage(WebDriver driver){
@@ -28,11 +28,13 @@ public class LoginPage {
 		driver.findElement(LoginTab).click();
 	}
 	
+	// Don't forget to mention your username in sendKeys
 	public void typeUserName(){
 		
 		driver.findElement(username).sendKeys("Prem55D");
 	}
 	
+	// Don't forget to mention your password in sendKeys
 	public void typePassword(){
 		
 		driver.findElement(password).sendKeys("Prem@123");
