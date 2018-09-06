@@ -10,6 +10,7 @@ public class BrowserFactory {
 	static WebDriver driver;
 	
 	public static WebDriver startBrowser(String browserName, String url){
+		// Write your script here
 		
 		if (browserName.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver", "geckodriver local path" );
