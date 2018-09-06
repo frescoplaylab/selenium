@@ -21,7 +21,7 @@ public class verfiyLogin_PageFactory {
 		// Created Page Object using Page Factory
 		PageFactoryLogin login_page = PageFactory.initElements(driver, PageFactoryLogin.class);
 		
-		// This Call the Method
+		// Write your username and password in below line
 		login_page.Login("Prem55D", "Prem@123");
 		System.out.println("Page Title : " + driver.getTitle());
 		driver.quit();
