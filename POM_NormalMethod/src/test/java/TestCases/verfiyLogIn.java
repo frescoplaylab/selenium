@@ -11,7 +11,7 @@ import Pages.LoginPage;
 public class verfiyLogIn {
 
 	@Test
-	public void VerfiyLogin() throws InterruptedException{
+	public void VerifyLogin() throws InterruptedException{
 		
 	//	System.setProperty("webdriver.gecko.driver", "/home/vsjanani/Desktop/Selenium_Workspace/Drivers/geckodriver" );
 	//	WebDriver driver = new FirefoxDriver();
