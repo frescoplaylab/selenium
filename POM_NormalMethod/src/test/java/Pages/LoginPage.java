@@ -12,10 +12,7 @@ public class LoginPage {
 	// In this class we will store all the locator and methods for LogIn page.
 	// Write your script here with element locators.
 	
-	By LoginTab=By.xpath("//*[@id='pt-login']/a");
-	By username=By.xpath("//*[@id='wpName1']");
-	By password=By.xpath("//*[@id='wpPassword1']");
-	By logIn=By.xpath("//*[@id='wpLoginAttempt']");
+	
 	
 	
 	
@@ -29,18 +26,18 @@ public class LoginPage {
 		driver.findElement(LoginTab).click();
 	}
 	
-	// Make sure to give your username
+	// Make sure to give your username in sendKeys
 	
 	public void typeUserName(){
 		
-		driver.findElement(username).sendKeys("Prem55D");
+		driver.findElement(username).sendKeys(" ");
 	}
 	
-	// Make sure to give your password
+	// Make sure to give your password in sendKeys
 	
 	public void typePassword(){
 		
-		driver.findElement(password).sendKeys("Prem@123");
+		driver.findElement(password).sendKeys(" ");
 	}
 	
 	public void clickLoginButton(){
