@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Cross Browser"  parallel="tests" >
+<suite name="Cross Browser" >
 
-	<test name="HtmlUnit test">
-		<parameter name="browser" value="HtmlUnit"/>
-		<classes>
-			<class name="crossBrowsers.googleLaunch"/>
-		</classes>
-	</test>
-
-	<test name="ChromeHeadless test">
-		<parameter name="browser" value="ChromeHeadless"/>
-		<classes>
-			<class name="crossBrowsers.googleLaunch"/>
-		</classes>
-	</test>
+	
 
 </suite>
