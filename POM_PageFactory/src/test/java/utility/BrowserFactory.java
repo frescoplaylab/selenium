@@ -12,14 +12,7 @@ public class BrowserFactory {
 	public static WebDriver startBrowser(String browserName, String url){
 		// Write your script here
 		
-		if (browserName.equalsIgnoreCase("firefox")){
-			System.setProperty("webdriver.gecko.driver", "geckodriver local path" );
-			driver= new FirefoxDriver();	
-		}
 		
-		else if (browserName.equalsIgnoreCase("HtmlUnitDriver")){	
-			 driver = new HtmlUnitDriver(true);	
-		}
 		
 		driver.manage().window().maximize();
 		driver.get(url);
