@@ -25,24 +25,11 @@ public class googleLaunch {
 	public void SelectBrowser(String browser)
 	{
 	
-		// Launch HtmlUnit Driver 
+		// Write your script here  
 		
-		if (browser.equalsIgnoreCase("HtmlUnit"))
-		{
-			driver = new HtmlUnitDriver(true);
-			System.out.println("HtmlUnit Driver launched");
-		}
 		
-		// Launch ChromeHeadless Driver
 		
-		else if (browser.equalsIgnoreCase("ChromeHeadless"))
-		{
-			ChromeDriverManager.getInstance().setup();
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headless");
-			driver = new ChromeDriver(chromeOptions);
-			System.out.println("Chrome Headless Driver launched");
-		}
+		
 		
 		
 	
@@ -54,7 +41,6 @@ public class googleLaunch {
 	public void GoogleSreach() throws InterruptedException{
 		
 		//Searching for "Fresco Play" in Google search
-		
 		driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys("Fresco Play");
 		driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys(Keys.ENTER);
 		Thread.sleep(6000);
@@ -62,7 +48,6 @@ public class googleLaunch {
 				
 				
 		//Click "Fresco Apps" link from search list
-		
 		driver.findElement(By.xpath("//*[@id='rso']/div/div/div[2]/div/div/h3/a")).click();
 		Thread.sleep(5000);
 		System.out.println("Page Title : " + driver.getTitle());
