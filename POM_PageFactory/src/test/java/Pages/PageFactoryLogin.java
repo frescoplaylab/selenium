@@ -15,10 +15,7 @@ public class PageFactoryLogin {
 	
 	// Write your script along element locators here.
 	
-	@FindBy(xpath="//*[@id='pt-login']/a")WebElement loginTab;
-	@FindBy(id="wpName1")WebElement username;
-	@FindBy(how=How.ID,using="wpPassword1")WebElement password;
-	@FindBy(how=How.XPATH,using="//*[@id='wpLoginAttempt']")WebElement logIn;
+	
 	
 	
 	public void Login(String uid, String pass){	
