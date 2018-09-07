@@ -22,7 +22,10 @@ public class verfiyLogin_PageFactory {
 		PageFactoryLogin login_page = PageFactory.initElements(driver, PageFactoryLogin.class);
 		
 		// Write your username and password in below line
-		login_page.Login("Prem55D", "Prem@123");
+		
+		
+		
+		
 		System.out.println("Page Title : " + driver.getTitle());
 		driver.quit();
 		System.out.println("Browser Quit is successful");
