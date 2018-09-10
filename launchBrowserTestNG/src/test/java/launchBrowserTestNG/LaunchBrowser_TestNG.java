@@ -10,19 +10,20 @@ public class LaunchBrowser_TestNG {
 	@Test
 	  public void LaunchBrowser() throws InterruptedException{
 		  
-			WebDriver driver = new HtmlUnitDriver(true);
-			driver.get("https://google.com");
-			Thread.sleep(3000);
-			System.out.println("Launch Browser is successful ");
-			System.out.println("Page Title : " + driver.getTitle());
+			// Write your script here
 			
+		  
+		  
+			
+		  
+		  
+		  
 			//Searching for "Fresco Play" in Google search
 			
 			driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys("Fresco Play");
 			driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys(Keys.ENTER);
 			Thread.sleep(5000);
-			System.out.println("Page Title : " + driver.getTitle());
-					
+			System.out.println("Page Title : " + driver.getTitle());		
 					
 			//Click "Fresco Apps" link from search list
 		  
@@ -30,6 +31,5 @@ public class LaunchBrowser_TestNG {
 			Thread.sleep(5000);
 			System.out.println("Page Title : " + driver.getTitle());
 			 driver.quit();
-  }
-  
+ 	 } 
 }
