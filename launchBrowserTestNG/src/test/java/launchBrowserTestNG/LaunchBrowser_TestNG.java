@@ -29,7 +29,7 @@ public class LaunchBrowser_TestNG {
 					
 		//Click "Fresco Apps" link from search list
 			
-		driver.findElement(By.xpath("//*[@id='rso']/div/div/div[2]/div/div/h3/a")).click();
+		driver.findElement(By.className("LC20lb")).click();
 		Thread.sleep(5000);
 		System.out.println("Page Title : " + driver.getTitle());
 		 driver.quit();
