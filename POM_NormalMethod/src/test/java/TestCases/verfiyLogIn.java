@@ -10,7 +10,11 @@ public class verfiyLogIn {
 	@Test
 	public void verifyLogin() throws InterruptedException{
 		
-		WebDriver driver = new HtmlUnitDriver(true);
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setJavascriptEnabled(true); // not really needed: JS enabled by default
+		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/root/selenium/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+		WebDriver driver = new PhantomJSDriver(caps);
+		System.out.println("PhantomJS Headless Driver launched");
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
 		Thread.sleep(8000);
 		
