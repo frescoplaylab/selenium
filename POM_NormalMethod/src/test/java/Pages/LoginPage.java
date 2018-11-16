@@ -10,11 +10,13 @@ public class LoginPage {
 	WebDriver driver;
 	
 	// In this class we will store all the locator and methods for LogIn page.
-	// Write your script here with element locators.
 	
 	
 	
 	
+	
+	
+	// By.id("wpPassword1");
 	
 	
 	public LoginPage(WebDriver driver){
@@ -26,18 +28,14 @@ public class LoginPage {
 		driver.findElement(LoginTab).click();
 	}
 	
-	// Make sure to give your username in sendKeys
-	
 	public void typeUserName(){
 		
-		driver.findElement(username).sendKeys(" ");
+		driver.findElement(username).sendKeys("Prem55D");
 	}
-	
-	// Make sure to give your password in sendKeys
 	
 	public void typePassword(){
 		
-		driver.findElement(password).sendKeys(" ");
+		driver.findElement(password).sendKeys("Prem@123");
 	}
 	
 	public void clickLoginButton(){

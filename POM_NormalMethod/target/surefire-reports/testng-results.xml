@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30597" started-at="2018-11-16T06:26:08Z" finished-at="2018-11-16T06:26:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="30597" started-at="2018-11-16T06:26:08Z" finished-at="2018-11-16T06:26:39Z">
+      <class name="TestCases.verfiyLogIn">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:TestCases.verfiyLogIn@3dd4520b]" name="verifyLogin" duration-ms="30536" started-at="2018-11-16T06:26:08Z" finished-at="2018-11-16T06:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- TestCases.verfiyLogIn -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
