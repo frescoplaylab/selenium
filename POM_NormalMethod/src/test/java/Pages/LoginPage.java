@@ -29,12 +29,12 @@ public class LoginPage {
 	
 	public void typeUserName(){
 		
-		driver.findElement(username).sendKeys("Prem55D");
+		driver.findElement(username).sendKeys("");
 	}
 	
 	public void typePassword(){
 		
-		driver.findElement(password).sendKeys("Prem@123");
+		driver.findElement(password).sendKeys("");
 	}
 	
 	public void clickLoginButton(){
