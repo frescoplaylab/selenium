@@ -5,18 +5,17 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-	//Local variable which help to perform the action
 	
 	WebDriver driver;
 	
-	// In this class we will store all the locator and methods for LogIn page.
+	// write your script here.
 	
 	
 	
 	
 	
 	
-	// By.id("wpPassword1");
+	
 	
 	
 	public LoginPage(WebDriver driver){
