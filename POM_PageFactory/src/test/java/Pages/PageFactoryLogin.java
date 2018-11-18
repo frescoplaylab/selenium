@@ -13,13 +13,10 @@ public class PageFactoryLogin {
 	this.driver=localdriver;
 	}
 	
-	@FindBy(xpath="//*[@id='pt-login']/a")WebElement loginTab;
+	// Write your script here
 	
-	@FindBy(id="wpName1")WebElement username;
+
 	
-	@FindBy(how=How.ID,using="wpPassword1")WebElement password;
-	
-	@FindBy(how=How.XPATH,using="//*[@id='wpLoginAttempt']")WebElement logIn;
 	
 	
 	
