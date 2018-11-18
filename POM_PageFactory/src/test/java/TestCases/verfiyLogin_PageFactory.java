@@ -13,14 +13,13 @@ public class verfiyLogin_PageFactory {
 	@Test
 	public void checkValidUser(){
 		
-		// This helps to launch browser and URL
 		WebDriver driver = BrowserFactory.startBrowser("PhantomJS", "https://en.wikipedia.org/wiki/Main_Page");
-		
-		// Created Page Object using Page Factory
 		PageFactoryLogin login_page = PageFactory.initElements(driver, PageFactoryLogin.class);
 		
 		// Write your username and password in below line
 
+		
+		
 		
 		
 	
