@@ -24,11 +24,10 @@ public class LaunchBrowser_TestNG {
 		System.out.println("PhantomJS Headless Driver launched");
 		
 		// Write your script here
-		driver.get("https://google.com");
-		Thread.sleep(5000);
-		System.out.println("Launch Browser is successful ");
-		System.out.println("Page Title : " + driver.getTitle());
-
+		
+		  
+		  
+		  
 	
 
 		//Searching for "Fresco Play" in Google search
