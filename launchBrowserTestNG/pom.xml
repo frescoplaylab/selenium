@@ -38,20 +38,7 @@
 
 
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
-
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>htmlunit-driver</artifactId>
-			<version>2.23</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.sourceforge.htmlunit</groupId>
-			<artifactId>htmlunit</artifactId>
-			<version>2.23</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 		<dependency>
 			<groupId>com.github.detro.ghostdriver</groupId>
@@ -61,20 +48,17 @@
 
 	</dependencies>
 	<build>
-
-		<plugins>
-
-			<plugin>
-
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
-				<configuration>
-					<compilerVersion>1.8</compilerVersion>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
+  		<plugins>
+      			  <plugin>
+          		  <groupId>org.apache.maven.plugins</groupId>
+         		  <artifactId>maven-compiler-plugin</artifactId>
+          		  <version>3.5.1</version>
+          		  <configuration>
+             		   <source>1.8</source>
+             		   <target>1.8</target>
+           		 </configuration>
+      		</plugin>
+    
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
