@@ -29,17 +29,14 @@
 
 
 		<!-- Add you Testng dependency here...!! -->
-
 		
-
-
-
-
-
-
-
 		
-
+		
+		
+		
+		
+		
+		
 		<dependency>
 			<groupId>com.github.detro.ghostdriver</groupId>
 			<artifactId>phantomjsdriver</artifactId>
