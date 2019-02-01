@@ -17,7 +17,14 @@ public class BrowserFactory {
 		
 		
 		
-		
+		else if (browserName.equalsIgnoreCase("PhantomJS"))
+		{
+			 DesiredCapabilities caps = new DesiredCapabilities();
+			 caps.setJavascriptEnabled(true); 
+			 caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\Users\\Prem Rajan\\Desktop\\Selenium_Workspace\\Driver\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+			 driver = new PhantomJSDriver(caps);
+			System.out.println("PhantomJS Headless Driver launched");
+		}
 		
 		driver.manage().window().maximize();
 		driver.get(url);
