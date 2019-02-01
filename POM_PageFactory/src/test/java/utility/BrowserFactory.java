@@ -13,9 +13,15 @@ public class BrowserFactory {
 	
 	public static WebDriver startBrowser(String browserName, String url ){
 		
-		// Write your script here
 		
+		if (browserName.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", "/root/selenium/chromedriver");
+			driver=new ChromeDriver();	
+		}
 		
+		else if (browserName.equalsIgnoreCase("HtmlUnitDriver")){
+			 driver = new HtmlUnitDriver(true);
+		}
 		
 		else if (browserName.equalsIgnoreCase("PhantomJS"))
 		{
@@ -26,8 +32,8 @@ public class BrowserFactory {
 			System.out.println("PhantomJS Headless Driver launched");
 		}
 		
-		driver.manage().window().maximize();
-		driver.get(url);
+		// Write your script here
+		
 		
 		return driver;
 	}
