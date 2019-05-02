@@ -54,17 +54,17 @@ public class googleLaunch {
 		// Searching for "Fresco Play" in Google search.
 		// Find the elementlocators for the below actions.
 		// 1) Find locator for Google Search Box and sendkeys as Fresco Play as below.
-		driver.findElement(By.("")).sendKeys("Fresco Play");
+		driver.findElement(By.name("q")).sendKeys("Fresco Play");
 		
 		// 2) Find locator for Google Search Box and sendkeys as Enter  as below.
-		driver.findElement(By.("")).sendKeys(Keys.ENTER);
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		Thread.sleep(6000);
 		System.out.println("Page Title : " + driver.getTitle());
 					
 		// Click "Fresco Apps" link from search list.
 		// 3) Find locator for Google Search Results and click  Fresco Apps link.
 		Thread.sleep(5000);
-		driver.findElement(By.("")).click();
+		driver.findElement(By.xpath("//*[@class='LC20lb']")).click();
 		Thread.sleep(5000);
 		System.out.println("Page Title : " + driver.getTitle());
 		
