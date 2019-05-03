@@ -37,13 +37,6 @@ public class LaunchBrowser_TestNG {
 		Thread.sleep(5000);
 		System.out.println("Page Title : " + driver.getTitle());
 					
-					
-		//Click "Fresco Apps" link from search list
-			
-		driver.findElement(By.("")).click();
-		Thread.sleep(5000);
-		System.out.println("Page Title : " + driver.getTitle());
-		driver.quit();
 	}
 }
 
