@@ -47,13 +47,7 @@ public class googleLaunch {
 		driver.findElement(By.("")).sendKeys(Keys.ENTER);
 		Thread.sleep(6000);
 		System.out.println("Page Title : " + driver.getTitle());
-					
-		// Click "Fresco Apps" link from search list.
-		// 3) Find locator for Google Search Results and click  Fresco Apps link.
-		Thread.sleep(5000);
-		driver.findElement(By.("")).click();
-		Thread.sleep(5000);
-		System.out.println("Page Title : " + driver.getTitle());
+				
 		
 	}
 	
